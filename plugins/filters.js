@@ -178,10 +178,10 @@ Asena.addCommand({on: 'text', fromMe: false}, (async (message, match) => {
     if(Config.BGMFILTER){
     let banned = jid.find( Jid => Jid === message.jid);
     if(banned !== undefined) return
-    if (!!message.mention && message.mention[0] == '918921483992@s.whatsapp.net') {
+    if (!!message.mention && message.mention[0] == '94783800632@s.whatsapp.net') {
 await message.client.sendMessage(message.jid, fs.readFileSync('./stickers/mention.webp'), MessageType.sticker, { mimetype: Mimetype.webp, quoted : message.data, ptt: false})
     }
-const array = ['Hi','power','sad','anthas','failed','alla','chunk','marichu','myre','think','cheyalle','mention','mama','set','gm','love','adarey','morning','Gm','Love','Adarey','Morning','hi','Hi','hlo','Hlo','Hello','song','isuru','Isuru','king','hello','ok','Ok','alive','sorry','Sorry']
+const array = ['Hi','power','sad','anthas','failed','alla','chunk','marichu','myre','think','isuwa','mention','mama','set','gm','love','adarey','morning','Gm','Love','Adarey','Morning','hi','Hi','hlo','Hlo','Hello','song','isuru','Isuru','king','hello','ok','Ok','alive','sorry','Sorry']
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
 if(pattern.test(message.message)){
